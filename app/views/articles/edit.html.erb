@@ -1,16 +1,13 @@
-<<<<<<< HEAD
 <%= form_for @article do |f| %>
 <%= f.label 'Article Title' %><br>
 <%= f.text_field :title %><br>
 <%= f.label 'Article Description' %>
 <%= f.text_area :description %><br>
 <%= f.submit 'Submit Article' %><br>
-=======
 <%= form_tag articles_path do %>
 <label>Article title: </label><br>
 <%= text_field_tag :title %><br>
 <label>Article description: </label><br>
 <%= text_area_tag :description %><br>
 <%= submit_tag "Submit Article" %>
->>>>>>> f2fee471f943d79d9a98e64918cf125af846c09c
 <% end %>
